@@ -10,6 +10,7 @@
 		94F83A41223D7BF600CC67D0 /* BowlingGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F83A37223D7BF600CC67D0 /* BowlingGame.framework */; };
 		94F83A46223D7BF600CC67D0 /* BowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F83A45223D7BF600CC67D0 /* BowlingGameTests.swift */; };
 		94F83A48223D7BF600CC67D0 /* BowlingGame.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F83A3A223D7BF600CC67D0 /* BowlingGame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94F83A52223D7D2000CC67D0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F83A51223D7D2000CC67D0 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		94F83A40223D7BF600CC67D0 /* BowlingGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F83A45223D7BF600CC67D0 /* BowlingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameTests.swift; sourceTree = "<group>"; };
 		94F83A47223D7BF600CC67D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F83A51223D7D2000CC67D0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				94F83A3A223D7BF600CC67D0 /* BowlingGame.h */,
+				94F83A51223D7D2000CC67D0 /* Game.swift */,
 				94F83A3B223D7BF600CC67D0 /* Info.plist */,
 			);
 			path = BowlingGame;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					94F83A36223D7BF600CC67D0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					94F83A3F223D7BF600CC67D0 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F83A52223D7D2000CC67D0 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		94F83A4C223D7BF600CC67D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vergiden.com.BowlingGame;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		94F83A4D223D7BF600CC67D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		94F83A4F223D7BF600CC67D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZEE8KAFFYS;
 				INFOPLIST_FILE = BowlingGameTests/Info.plist;
@@ -409,6 +418,7 @@
 		94F83A50223D7BF600CC67D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZEE8KAFFYS;
 				INFOPLIST_FILE = BowlingGameTests/Info.plist;
